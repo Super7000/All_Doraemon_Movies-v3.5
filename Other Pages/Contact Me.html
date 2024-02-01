@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Me</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="styles/contact-me.css">
+
+	<script type="text/javascript">
+		window.onload = function() {loader()};
+		function loader() {
+			var a = document.getElementById('loader-con');
+			a.style.cssText = 'display: none;';
+		}
+		function menutocross() {
+			var a = document.getElementById('menu-bar-check');
+			var b = document.getElementById('menu-bar-icon-line1');
+			var c = document.getElementById('menu-bar-icon-line2');
+			var d = document.getElementById('menu-bar-icon-line3');
+			var e = document.getElementById('menu-bar');
+			if (a.checked == true) {
+				b.style.cssText = 'transform: rotate(45deg); width: 40px; top: 15px; left: -2px;';
+				c.style.cssText = 'display: none;';
+				d.style.cssText = 'transform: rotate(-45deg); width: 40px; left: -2px;';
+				e.style.cssText = 'left: 0px;'
+			} else {
+				b.style.cssText = "";
+				c.style.cssText = '';
+				d.style.cssText = "";
+				e.style.cssText = '';
+			}
+		}
+	</script>
+</head>
+<body id="body">
+	<div class="loader-con" id="loader-con">
+		<div class="loader1"></div>
+		<div class="loader2"></div>
+		<div class="loader3"></div>
+		<div class="loader4"></div>
+		<div class="loader5"></div>
+	</div>
+	<div class="main">
+		<b>
+			<div id="menu-bar-icon">
+				<input type="checkbox" id="menu-bar-check" onclick="menutocross()">
+				<div id="menu-bar-icon-line1"></div>
+				<div id="menu-bar-icon-line2"></div>
+				<div id="menu-bar-icon-line3"></div>
+			</div>
+		<img src="" class="main-img">
+		<div class="menu-bar" id="menu-bar">
+			<a href="Sign Up.html" class="sign-up">
+				<img src="../Assets/Person.png" class="sign-up-pic">
+				<p class="sign-up-para">Sign Up</p>
+			</a>
+			<div class="menu" style="width: 210px;"><a href="#" class="menu-link" id="ass" style="opacity: 0.7;">Contact Me</a></div>
+			<div class="menu" style="width: 150px;"><a href="More.html" class="menu-link">More</a></div>
+			<div class="menu" style="width: 160px;"><a href="Details.html" class="menu-link">Details</a></div>
+			<div class="menu" style="width: 210px;">
+				<a href="Contact Me (Dark).html" class="menu-link" id="darkpara">Darkmode</a>
+			</div>
+			<div class="menu" style="width: 150px;"><a href="../List Of All Doraemon Movies  (Version 3.5).html" class="menu-link">Home</a></div>
+		</div>
+		<div class="bug-container" id="bug-container">
+			<center>
+				<p class="bug-head" id="bug-head">Contact Me</p>
+				<br>
+				<input type="text" name="" id="e-mail" placeholder="Email Address">
+				<br>
+				<input type="text" name="" id="e-mail-2" placeholder="Message">
+				<br>
+				<input type="text" name="" id="bug" value="subratachowdhury7000@gmail.com" readonly="">
+				<br>
+				<br>
+				<br>
+				<br>
+				<a href="#" id="btn">Send</a>
+			</center>
+		</div>
+		<div class="bg"></div>
+		</b>
+	</div>
+</body>
+</html>

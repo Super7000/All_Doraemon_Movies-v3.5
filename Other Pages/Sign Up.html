@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="styles/sign-up.css">
+
+	<script type="text/javascript">
+		window.onload = function() {loader()};
+		function loader() {
+			var a = document.getElementById('loader-con');
+			a.style.cssText = 'display: none;';
+		}
+		function detector() {
+			var d = document.getElementById('detect');
+			var a = document.getElementById('p');
+			var b = a.value;
+			var c = b.length;
+			if (c>=30) {
+				d.innerHTML = "Very Strong";
+				d.style.cssText = "color: green;";
+			} else if (c>=20) {
+				d.innerHTML = "Strong";
+				d.style.cssText = "color: dodgerblue;";
+			} else if (c>=8) {
+				d.innerHTML = "Normal";
+				d.style.cssText = "color: orange;";
+			} else if (c>=1) {
+				d.innerHTML = "Weak";
+				d.style.cssText = "color: red;";
+			} else {
+				d.innerHTML = " ";
+			}			
+		}
+		var interval = setInterval(detector, 100);
+		function viewpassword() {
+			var a = document.getElementById("kp");
+			var b = document.getElementById("p");
+			var d = document.getElementById("pic")
+			var e = document.getElementById("cp")
+			if (a.checked == true) {
+				b.type = "text";
+				e.type = "text";
+				d.src = "../Assets/hide.svg"
+			} else {
+				b.type = "Password";
+				e.type = "Password";
+				d.src = "../Assets/show.svg";
+			}
+		}
+		function menutocross() {
+			var a = document.getElementById('menu-bar-check');
+			var b = document.getElementById('menu-bar-icon-line1');
+			var c = document.getElementById('menu-bar-icon-line2');
+			var d = document.getElementById('menu-bar-icon-line3');
+			var e = document.getElementById('menu-bar');
+			if (a.checked == true) {
+				b.style.cssText = 'transform: rotate(45deg); width: 40px; top: 15px; left: -2px;';
+				c.style.cssText = 'display: none;';
+				d.style.cssText = 'transform: rotate(-45deg); width: 40px; left: -2px;';
+				e.style.cssText = 'left: 0px;'
+			} else {
+				b.style.cssText = "";
+				c.style.cssText = '';
+				d.style.cssText = "";
+				e.style.cssText = '';
+			}
+		}
+	</script>
+	
+</head>
+<body>
+	<b>
+	<div class="loader-con" id="loader-con">
+		<div class="loader1"></div>
+		<div class="loader2"></div>
+		<div class="loader3"></div>
+		<div class="loader4"></div>
+		<div class="loader5"></div>
+	</div>
+	<div id="menu-bar-icon">
+		<input type="checkbox" id="menu-bar-check" onclick="menutocross()">
+		<div id="menu-bar-icon-line1"></div>
+		<div id="menu-bar-icon-line2"></div>
+		<div id="menu-bar-icon-line3"></div>
+	</div>
+	<div class="menu-bar" id="menu-bar">
+		<div class="menu" style="width: 210px;"><a href="Contact Me.html" class="menu-link" id="ass">Contact Me</a></div>
+		<div class="menu" style="width: 150px;"><a href="More.html" class="menu-link">More</a></div>
+		<div class="menu" style="width: 160px;"><a href="Details.html" class="menu-link">Details</a></div>
+		<div class="menu" style="width: 210px;">
+			<a href="Sign Up (Dark).html" class="menu-link" id="darkpara">Darkmode</a>
+		</div>
+		<div class="menu" style="width: 150px;"><a href="../List Of All Doraemon Movies  (Version 3.5).html" class="menu-link">Home</a></div>
+	</div>
+	<div class="main" id="main">
+		<center>
+			<b>
+				<p class="sign-up" id="sign-up">My Animes</p>
+			</b>
+		</center>
+		<input type="text" name="" id="fn" placeholder="First Name" required><br>
+		<input type="text" name="" id="sn" placeholder="Second Name" required><br>
+		<input type="Password" name="" id="p" placeholder="A New Password" required><br>
+		<input type="checkbox" id="kp" name="" onclick="viewpassword()">
+		<img src="../Assets/show.svg" id="pic">
+		<p class="para" id="para">Your Password is :<span id="detect"></span></p>
+		
+		<input type="Password" name="" id="cp" placeholder="Confirm Password" required><br>
+		<input type="email" name="" id="e" placeholder="Email Address" required>
+		<center>
+			<p class="login-form" id="login-form">Already have an Account? <span id="login-form-link"><a href="Login Form.html" id="login-form-link">Click here</a></span></p>
+		</center>
+		<a href="../List Of All Doraemon Movies  (Version 3.5).html" class="btn" id="btn">Sign Up</a>
+	</div>
+	<div class="bg"></div>
+	</b>
+</body>
+</html>

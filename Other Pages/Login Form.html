@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Log In Form</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="styles/login-form.css">
+
+	<script>
+		window.onload = function() {loader()};
+		function loader() {
+			var a = document.getElementById('loader-con');
+			a.style.cssText = 'display: none;';
+		}
+		function viewpassword2() {
+			var a = document.getElementById("kp2");
+			var b = document.getElementById("p2");
+			var d = document.getElementById("pic2");
+			if (a.checked == true) {
+				b.type = "text";
+				d.src = "../Assets/hide.svg"
+			} else {
+				b.type = "Password";
+				d.src = "../Assets/show.svg";
+			}
+		}
+		function menutocross() {
+			var a = document.getElementById('menu-bar-check');
+			var b = document.getElementById('menu-bar-icon-line1');
+			var c = document.getElementById('menu-bar-icon-line2');
+			var d = document.getElementById('menu-bar-icon-line3');
+			var e = document.getElementById('menu-bar');
+			if (a.checked == true) {
+				b.style.cssText = 'transform: rotate(45deg); width: 40px; top: 15px; left: -2px;';
+				c.style.cssText = 'display: none;';
+				d.style.cssText = 'transform: rotate(-45deg); width: 40px; left: -2px;';
+				e.style.cssText = 'left: 0px;'
+			} else {
+				b.style.cssText = "";
+				c.style.cssText = '';
+				d.style.cssText = "";
+				e.style.cssText = '';
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="loader-con" id="loader-con">
+		<div class="loader1"></div>
+		<div class="loader2"></div>
+		<div class="loader3"></div>
+		<div class="loader4"></div>
+		<div class="loader5"></div>
+	</div>
+	<b>
+	<div id="menu-bar-icon">
+		<input type="checkbox" id="menu-bar-check" onclick="menutocross()">
+		<div id="menu-bar-icon-line1"></div>
+		<div id="menu-bar-icon-line2"></div>
+		<div id="menu-bar-icon-line3"></div>
+	</div>
+	<div class="menu-bar" id="menu-bar">
+		<div class="menu" style="width: 210px;"><a href="Contact Me.html" class="menu-link" id="ass">Contact Me</a></div>
+		<div class="menu" style="width: 150px;"><a href="More.html" class="menu-link">More</a></div>
+		<div class="menu" style="width: 160px;"><a href="Details.html" class="menu-link">Details</a></div>
+		<div class="menu" style="width: 210px;">
+			<a href="Login Form (Dark).html" class="menu-link" id="darkpara">Darkmode</a>
+		</div>
+		<div class="menu" style="width: 150px;"><a href="../List Of All Doraemon Movies  (Version 3.5).html" class="menu-link">Home</a></div>
+	</div>
+	<div class="main2" id="main2">
+		<center>
+			<b>
+				<p class="sign-up" id="sign-up">My Animes</p>
+			</b>
+		</center>
+		<input type="email" name="" id="e2" placeholder="Email Address" required>
+		<input type="Password" name="" id="p2" placeholder="Password" required><br>
+		<input type="checkbox" id="kp2" name="" onclick="viewpassword2()">
+		<img src="../Assets/show.svg" id="pic2">
+		<a href="../List Of All Doraemon Movies  (Version 3.5).html" class="btn" id="btn" onclick="">Log In</a>
+		<center>
+			<p class="login-form-2" id="login-form-2">Don't have an Account? <span id="login-form-link"><a href="Sign Up.html" id="login-form-link">Click here</a></span></p>
+		</center>
+	</div>
+	<div class="bg"></div>
+	</b>
+</body>
+</html>

@@ -1,0 +1,669 @@
+.main-img {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    z-index: -1;
+}
+
+.menu-bar {
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+    top: 0px;
+    left: 0;
+    background: midnightblue;
+    padding: 15px;
+    animation: menu-bar_top 1.5s;
+}
+
+@keyframes menu-bar_top {
+    0% {
+        top: 200px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+.menu {
+    font-size: 1.7em;
+    position: relative;
+    float: right;
+    top: 0px;
+    font-family: verdana;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.sign-up-pic {
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+}
+
+.sign-up {
+    position: fixed;
+    width: 200px;
+    top: 6px;
+    text-decoration: none;
+    color: #fff;
+    z-index: 2;
+}
+
+.sign-up-para {
+    font-size: 1.7em;
+    font-family: verdana;
+    position: absolute;
+    top: -20px;
+    left: 70px;
+}
+
+.sign-up-para:hover {
+    opacity: 0.7;
+}
+
+.menu-link:hover {
+    opacity: 0.7;
+}
+
+.movie1,
+.movie2,
+.movie3,
+.movie4,
+.movie5,
+.movie6,
+.movie7,
+.movie8,
+.movie9,
+.movie10,
+.movie11,
+.movie12,
+.movie13,
+.movie14,
+.movie15,
+.movie16,
+.movie17,
+.movie18,
+.movie19,
+.movie20,
+.movie21,
+.movie22,
+.movie23,
+.movie24,
+.movie25,
+.movie26,
+.movie27,
+.movie28,
+.movie29,
+.movie30,
+.movie31,
+.movie32,
+.movie33,
+.movie34,
+.movie35,
+.movie36,
+.movie37,
+.movie38,
+.movie39,
+.movie40,
+.movie41,
+.movie42,
+.movie43 {
+    width: 300px;
+    height: 610px;
+    background: #172727;
+    border-radius: 30px;
+    box-shadow: 0 0 15px dodgerblue,
+        0 0 0px dodgerblue;
+}
+
+table {
+    position: relative;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 80%;
+}
+
+.movie-name {
+    color: #fff;
+}
+
+.movie1-pic,
+.movie2-pic,
+.movie3-pic,
+.movie4-pic,
+.movie5-pic,
+.movie6-pic,
+.movie7-pic,
+.movie8-pic,
+.movie9-pic,
+.movie10-pic,
+.movie11-pic,
+.movie12-pic,
+.movie13-pic,
+.movie14-pic,
+.movie15-pic,
+.movie16-pic,
+.movie17-pic,
+.movie18-pic,
+.movie19-pic,
+.movie20-pic,
+.movie21-pic,
+.movie22-pic,
+.movie23-pic,
+.movie24-pic,
+.movie25-pic,
+.movie26-pic,
+.movie27-pic,
+.movie28-pic,
+.movie29-pic,
+.movie30-pic,
+.movie31-pic,
+.movie32-pic,
+.movie33-pic,
+.movie34-pic,
+.movie35-pic,
+.movie36-pic,
+.movie37-pic,
+.movie38-pic,
+.movie39-pic,
+.movie40-pic,
+.movie41-pic,
+.movie42-pic,
+.movie43-pic {
+    width: 90%;
+    border-radius: 20px;
+    position: relative;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.movie-name {
+    font-size: 1.2em;
+    font-family: verdana;
+    text-decoration: none;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+
+}
+
+td a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    background: orange;
+    font-size: 22px;
+    font-family: verdana;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+.container {
+    width: 85%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    position: relative;
+    left: 50%;
+    top: 650px;
+    padding-bottom: 50px;
+    transform: translate(-50%, 0);
+    box-shadow: 0 0 0 500vh rgba(0, 0, 0, 0.6),
+        inset 0 0 0 100vh rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    width: 100%;
+    background: midnightblue;
+    opacity: 0.8;
+    height: 60px;
+}
+
+.header-para {
+    font-size: 2em;
+    font-family: verdana;
+    position: relative;
+    top: 30px;
+    left: 40px;
+    color: #fff;
+    transform: translate(0, -50%);
+}
+
+.divider {
+    font-size: 2em;
+    color: purple;
+    font-family: verdana;
+}
+
+.gtt {
+    height: 80px;
+    width: 80px;
+    background: midnightblue;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 50%;
+    z-index: -2;
+    opacity: 0;
+    transition: 1.5s;
+    cursor: pointer;
+}
+
+.gtti {
+    font-size: 2.5em;
+    position: relative;
+    top: -25px;
+    color: #fff;
+    transform: rotate(90deg);
+    animation: gototop 1s linear infinite;
+}
+
+@keyframes gototop {
+    0% {
+        top: -30px;
+    }
+
+    50% {
+        top: -15px;
+    }
+
+    100% {
+        top: -30px;
+    }
+}
+
+@keyframes changecolor {
+    0% {
+        filter: drop-shadow(0 0 80px dodgerblue) hue-rotate(0deg);
+    }
+
+    100% {
+        filter: drop-shadow(0 0 80px dodgerblue) hue-rotate(360deg);
+    }
+}
+
+.down {
+    font-size: 5em;
+    position: absolute;
+    color: #fff;
+    top: 600px;
+    left: 45%;
+    z-index: 2;
+    transform: rotate(90deg) translate(-50%, -50%);
+    cursor: pointer;
+    animation: gotodown 1s linear infinite;
+}
+
+@keyframes gotodown {
+    0% {
+        top: 72%;
+
+    }
+
+    50% {
+        top: calc(72% + 25px);
+
+    }
+
+    100% {
+        top: 72%;
+
+    }
+}
+
+#menu-bar-icon {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    z-index: 5;
+    border-radius: 10px;
+    display: none;
+    animation: 1s;
+}
+
+#menu-bar-icon-line1,
+#menu-bar-icon-line2,
+#menu-bar-icon-line3 {
+    width: 35px;
+    height: 5px;
+    background: dodgerblue;
+    position: relative;
+    top: 3px;
+    left: 1px;
+    margin: 7px;
+    transition: 0.5s;
+    border-radius: 2.5px;
+}
+
+/* 
+#menu-bar-icon-line1 {}
+
+#menu-bar-icon-line3 {}
+ */
+
+#menu-bar-check {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    cursor: pointer;
+    z-index: 2;
+    appearance: none;
+    display: none;
+    outline: none;
+}
+
+.last {
+    height: 500px;
+    width: 100%;
+    background: #172727;
+    position: relative;
+    top: 100vh;
+}
+
+.last-div1-head,
+.last-div2-head {
+    position: relative;
+    color: #fff;
+    font-size: 22px;
+    font-family: verdana;
+}
+
+.last-div1:after,
+.last-div2:after,
+.last-div3:after {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 4px;
+    background: #fff;
+    border-radius: 2px;
+    top: 55px;
+    left: 0;
+}
+
+.last-div1,
+.last-div2,
+.last-div3 {
+    top: 70px;
+    position: absolute;
+    color: #fff;
+    width: 250px;
+}
+
+.last-div2 {
+    right: 20%;
+}
+
+.last-div1 {
+    left: 230px;
+}
+
+.last-div3 {
+    left: 40%;
+}
+
+.last-div1-link {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-family: verdana;
+    font-size: 18px;
+}
+
+.last-div2-p {
+    position: relative;
+    color: #fff;
+    font-family: verdana;
+    font-size: 18px;
+}
+
+.last-div2-link {
+    text-decoration: none;
+}
+
+.last-div2-link img {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+.last-copyright {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background: midnightblue;
+    font-size: 20px;
+    font-family: verdana;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.head {
+    font-size: 4em;
+    font-family: verdana;
+    position: relative;
+    top: -80px;
+    left: 0px;
+    color: dodgerblue;
+    border-radius: 10px;
+    /*box-shadow: 0 0 0 50vh rgba(0,0,0,0.2),
+                inset 0 0 0 50vh rgba(0,0,0,0.2);*/
+    animation: changecolor 7s linear infinite;
+}
+
+#first-para {
+    font-size: 22px;
+    font-family: verdana;
+    position: relative;
+    top: -100px;
+    left: 0px;
+    width: 500px;
+    color: #fff;
+}
+
+#first-para-div {
+    padding: 50px;
+    width: 550px;
+    height: 280px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    border-radius: 10px;
+    backdrop-filter: blur(7px);
+    z-index: 3;
+}
+
+#first-para-div:hover~.floating_div1 {
+    opacity: 1;
+    top: 100px;
+}
+
+#first-para-div:hover~.floating_div2 {
+    opacity: 1;
+    left: 40px;
+}
+
+#first-para-div:hover~.floating_div3 {
+    opacity: 1;
+    right: 50px;
+}
+
+.floating_div1 {
+    height: 150px;
+    width: 150px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    left: calc(50% + 20px);
+    top: 200px;
+    border-radius: 10px;
+    z-index: 4;
+    animation: float_two 2s linear infinite;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.floating_div2 {
+    height: 80px;
+    width: 80px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    left: 80px;
+    top: 250px;
+    border-radius: 10px;
+    z-index: 4;
+    animation: float 2s linear infinite;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.floating_div3 {
+    width: 180px;
+    height: 180px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    position: absolute;
+    right: 500px;
+    top: 400px;
+    backdrop-filter: blur(5px);
+    z-index: 4;
+    animation: float_three 2s linear infinite;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+@keyframes float {
+    0% {
+        top: 240px;
+    }
+
+    50% {
+        top: 260px;
+    }
+
+    100% {
+        top: 240px;
+    }
+}
+
+@keyframes float_two {
+    0% {
+        left: calc(50% + 15px);
+    }
+
+    50% {
+        left: calc(50% + 35px);
+    }
+
+    100% {
+        left: calc(50% + 18px);
+    }
+}
+
+@keyframes float_three {
+    0% {
+        top: 390px;
+    }
+
+    50% {
+        top: 410px;
+    }
+
+    100% {
+        top: 390px;
+    }
+}
+
+@media (max-width:768px) {
+
+    .followme,
+    .developer {
+        font-size: 20px;
+    }
+
+    .linksp {
+        width: 60%;
+        left: 33%;
+        font-size: 20px;
+    }
+
+    .link {
+        position: relative;
+        left: -30%;
+        font-size: 15px;
+    }
+
+    .socialmedia {
+        padding: 5px;
+        width: 30px;
+    }
+}
+
+@media (max-width: 1138px) {
+    .menu-bar {
+        width: 300px;
+        height: 100%;
+        left: -500px;
+        transition: 0.5s;
+    }
+
+    #menu-bar-icon {
+        display: block;
+    }
+
+    #menu-bar-check {
+        display: block;
+    }
+
+    .menu {
+        height: 60px;
+        left: 20px;
+        float: none;
+        top: 160px;
+    }
+
+    .menu-link {
+        font-size: 32px;
+    }
+
+    .sign-up-pic {
+        display: none;
+    }
+
+    .sign-up-para {
+        top: 75px;
+        font-size: 32px;
+        width: 180px;
+        left: 20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    /* .menu-bar {} */
+}
